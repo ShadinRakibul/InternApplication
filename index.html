@@ -1,10 +1,139 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Munches</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header class="bg-danger  text-white text-center py-5">
+        <div class="container">
+            <h1>Your favorite food,delivered to you</h1>
+            <div class="search-container d-flex justify-content-center mt-4">
+                <input type="text" class="form-control w-50" id="location" placeholder="New York" />
+                <button class="btn btn-secondary ml-2" onclick="search()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="taste-section py-5">
+        <div class="container d-flex align-items-center">
+            <img src="images/food-image.jpg" alt="Delicious Food" class="img-fluid">
+            <div class="text ml-4">
+                <h2>Take a taste,come join us.Life is so endlessly delicious</h2>
+                <button class="btn btn-primary mt-3">Download our App</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-section py-5 bg-light">
+        <div class="container">
+            <h2>Popular in New York area</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="images/restaurant1.jpg" class="card-img-top" alt="Restaurant Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Star Kabab</h5>
+                            <p class="card-text">0.5 KM away | 10-15 mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="images/restaurant2.jpg" class="card-img-top" alt="Restaurant Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Masala-Dosa</h5>
+                            <p class="card-text">0.5 KM away | 10-15 mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="images/restaurant3.jpg" class="card-img-top" alt="Restaurant Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Popeye House</h5>
+                            <p class="card-text">0.5 KM away | 10-15 mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="images/gg.jpg" class="card-img-top" alt="Restaurant Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Milivery</h5>
+                            <p class="card-text">0.5 KM away | 10-15 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works py-5">
+        <div class="container text-center">
+            <h2>How it works</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/order-icon.png" alt="Order Icon" class="img-fluid">
+                    <p>Order via App</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/choose-icon.png" alt="Choose Icon" class="img-fluid">
+                    <p>Choose your food</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/enjoy-icon.png" alt="Enjoy Icon" class="img-fluid">
+                    <p>Enjoy!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section py-5 bg-light text-center">
+        <div class="container">
+            <h2>Food Delivery helps you bring food to your front door</h2>
+            <button class="btn btn-primary mt-3">Download our App</button>
+            <button class="btn btn-secondary mt-3">Browse food</button>
+        </div>
+    </section>
+
+    <section class="testimonials py-5">
+        <div class="container text-center">
+            <h2>What our food lovers said</h2>
+            <div class="testimonial mt-4">
+                <p>"In the midst of an epicurean adventure,it is traditionally indefinable,yet it is undeniably,indescribably, delicious."</p>
+                <p>-Tim Cook,satisfied Burger Enthusiast</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>FoodDelivery</p>
+            <nav class="my-2">
+                <a href="#" class="text-white mx-2">Partners</a>
+                <a href="#" class="text-white mx-2">About Us</a>
+                <a href="#" class="text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-white mx-2">Contact Us</a>
+            </nav>
+            <address>
+                <p>123 Main Street, New York, NY 10001</p>
+                <p>+1 123-456-7890</p>
+            </address>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function search() {
+            let location = document.getElementById('location').value;
+            alert('Searching for restaurants in ' + location);
+        }
+    </script>
 </body>
 </html>

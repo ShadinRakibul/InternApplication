@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.taste-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.taste-section .content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.taste-section img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.taste-section .text {
+    flex: 1;
+}
+
+.taste-section .text h2 {
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+.taste-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popular-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.popular-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.restaurants {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.restaurant {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.restaurant img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.restaurant h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.how-it-works {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+}
+
+.step img {
+    width: 100px;
+    height: 100px;
+}
+
+.download-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.download-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.download-section button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer address {
+    margin-top: 10px;
+}
+
+footer address p {
+    margin: 5px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .taste-section {
+        flex-direction: column;
+    }
+
+    .taste-section img {
+        margin-bottom: 20px;
+    }
+
+    .restaurants {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restaurant {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .download-section button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
